@@ -1,0 +1,75 @@
+/* 炫酷的滚动视差效果 */
+
+/* 为所有段落添加微妙的视差 */
+.capability-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, 
+    rgba(255, 255, 255, 0.3) 0%, 
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+  pointer-events: none;
+}
+
+/* 高光效果 - 当段落处于中心时 */
+.capability-section.in-view::before {
+  opacity: 1;
+}
+
+/* 平滑的颜色过渡 */
+.capability-scroll {
+  position: relative;
+}
+
+.capability-scroll::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.02) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 标题文字的额外动画 */
+.capability-title {
+  display: inline-block;
+  background: linear-gradient(135deg, #1A1F2E 0%, #3E4C63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 8px rgba(26, 31, 46, 0.1));
+}
+
+/* 正文渐显效果 */
+.capability-body {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 减少动画（可访问性） */
+@media (prefers-reduced-motion: reduce) {
+  .capability-section::before,
+  .capability-scroll::after {
+    display: none;
+  }
+  
+  .capability-title {
+    filter: none;
+  }
+  
+  .capability-body {
+    text-shadow: none;
+  }
+}
+

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "field": "Computational Social Science",
+    "narrative": "从对社交媒体数据的好奇，到系统性抓取、清洗、可视化，最终以独立研究被导师推荐至顶级 PhD 项目。过程中失败过三次数据采集方案。",
+    "duration": "16 个月",
+    "keyMilestone": "在导师实验室做了 8 个月 RA，产出两篇工作论文",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "field": "History of Science",
+    "narrative": "对冷战时期科学政策感兴趣，但缺乏史学训练。我们帮他从档案阅读入手，建立 Zotero 知识库，最终以长篇 Writing Sample 打动跨学科项目。",
+    "duration": "14 个月",
+    "keyMilestone": "参与导师书稿注释工作，理解学术写作的耐心与细节",
+    "createdAt": "2024-01-02T00:00:00.000Z",
+    "updatedAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "field": "Urban Planning",
+    "narrative": "从建筑设计转向规划，需要补齐定量方法与政策分析。我们设计了 GIS + 经济学的暑期自学路径，并以社区调研项目展现跨学科能力。",
+    "duration": "13 个月",
+    "keyMilestone": "独立完成一次 50+ 受访者的社区需求调研并写成报告",
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "field": "Linguistics (Phonology)",
+    "narrative": "对少数民族语言音系学感兴趣，但资源有限。我们协助他联系田野调查机会，学习 Praat 声学分析，最终以田野笔记 + 分析报告申请。",
+    "duration": "18 个月",
+    "keyMilestone": "两次田野调查，积累 30 小时高质量录音与转写",
+    "createdAt": "2024-01-04T00:00:00.000Z",
+    "updatedAt": "2024-01-04T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "field": "Environmental Engineering",
+    "narrative": "关注水质监测，但科研经历碎片化。我们帮他梳理已有实验数据，补充文献综述，最终以完整的方法论叙事呈现科研潜力。",
+    "duration": "12 个月",
+    "keyMilestone": "重新整理两年实验记录，产出可发表质量的数据集与分析",
+    "createdAt": "2024-01-05T00:00:00.000Z",
+    "updatedAt": "2024-01-05T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "field": "Comparative Literature",
+    "narrative": "对翻译理论感兴趣，但写作缺乏理论深度。我们引导他精读三本经典，并以一次翻译实践 + 反思性分析作为 Writing Sample。",
+    "duration": "15 个月",
+    "keyMilestone": "完成一篇 8000 字的翻译理论分析，获导师高度评价",
+    "createdAt": "2024-01-06T00:00:00.000Z",
+    "updatedAt": "2024-01-06T00:00:00.000Z"
+  }
+]
+
