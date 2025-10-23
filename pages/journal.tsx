@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import CharHover from "../components/CharHover";
-import TiltCard from "../components/TiltCard";
 import type { Article } from "../lib/data";
 
 export default function Journal() {
@@ -84,27 +83,26 @@ export default function Journal() {
         <div className="section">
           <div className="journal-list">
             {articles.map((article, index) => (
-              <TiltCard key={article.id} className="card">
-                <article
-                  ref={(el) => { if (el) articleRefs.current[index] = el; }}
-                  className={`journal-item ${activeArticle === index ? "is-active" : ""}`}
-                  tabIndex={0}
-                >
-                  <div className="journal-meta">
-                    <time className="journal-date">{article.date}</time>
-                    <span className="journal-read-time">{article.readTime}</span>
-                  </div>
-                  <h2 className="journal-title">{article.title}</h2>
-                  <p className="journal-excerpt">{article.excerpt}</p>
-                  <button 
-                    className="journal-link" 
-                    aria-label={`阅读 ${article.title}`}
+              <article
+                key={article.id}
+                ref={(el) => { if (el) articleRefs.current[index] = el; }}
+                className={`journal-item ${activeArticle === index ? "is-active" : ""}`}
+                tabIndex={0}
+              >
+                <div className="journal-meta">
+                  <time className="journal-date">{article.date}</time>
+                  <span className="journal-read-time">{article.readTime}</span>
+                </div>
+                <h2 className="journal-title">{article.title}</h2>
+                <p className="journal-excerpt">{article.excerpt}</p>
+                <button 
+                  className="journal-link" 
+                  aria-label={`阅读 ${article.title}`}
                   onClick={() => handleReadArticle(article)}
                 >
                   阅读全文 →
                 </button>
               </article>
-              </TiltCard>
             ))}
           </div>
         </div>

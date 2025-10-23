@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import CharHover from "../components/CharHover";
-import TiltCard from "../components/TiltCard";
 import type { Outcome } from "../lib/data";
 
 export default function Outcomes() {
@@ -52,26 +51,25 @@ export default function Outcomes() {
         <div className="section">
           <div className="outcomes-grid">
             {outcomes.map((item, index) => (
-              <TiltCard key={item.id} className="card">
-                <article 
-                  className={`outcome-card ${activeCard === index ? "is-active" : ""}`}
-                  onMouseEnter={() => setActiveCard(index)}
-                  onMouseLeave={() => setActiveCard(null)}
-                  onFocus={() => setActiveCard(index)}
-                  onBlur={() => setActiveCard(null)}
-                  tabIndex={0}
-                >
-                  <div className="outcome-meta">
-                    <span className="outcome-field">{item.field}</span>
-                    <span className="outcome-duration">{item.duration}</span>
-                  </div>
-                  <p className="outcome-narrative">{item.narrative}</p>
-                  <div className="outcome-milestone">
-                    <strong>关键节点：</strong>
-                    {item.keyMilestone}
-                  </div>
-                </article>
-              </TiltCard>
+              <article 
+                key={item.id}
+                className={`outcome-card ${activeCard === index ? "is-active" : ""}`}
+                onMouseEnter={() => setActiveCard(index)}
+                onMouseLeave={() => setActiveCard(null)}
+                onFocus={() => setActiveCard(index)}
+                onBlur={() => setActiveCard(null)}
+                tabIndex={0}
+              >
+                <div className="outcome-meta">
+                  <span className="outcome-field">{item.field}</span>
+                  <span className="outcome-duration">{item.duration}</span>
+                </div>
+                <p className="outcome-narrative">{item.narrative}</p>
+                <div className="outcome-milestone">
+                  <strong>关键节点：</strong>
+                  {item.keyMilestone}
+                </div>
+              </article>
             ))}
           </div>
         </div>
