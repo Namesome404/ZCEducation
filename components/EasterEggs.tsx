@@ -200,7 +200,7 @@ const EasterEggs = () => {
           }
         }
 
-        :global(@keyframes rainbow) {
+        @keyframes :global(rainbow) {
           0%, 100% { filter: hue-rotate(0deg); }
           50% { filter: hue-rotate(360deg); }
         }
