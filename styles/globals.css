@@ -448,3 +448,95 @@ a {
   }
 }
 
+/* Dark Mode */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background: #0f1419;
+  color: #E8EAED;
+}
+
+.dark .nav {
+  background: rgba(15, 20, 25, 0.85);
+}
+
+.dark .nav-scrolled {
+  background: rgba(15, 20, 25, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+.dark .nav-logo,
+.dark .nav-logo-main,
+.dark .nav-logo-sub {
+  color: #E8EAED;
+}
+
+.dark .nav-links a {
+  color: #9CA3AF;
+}
+
+.dark .nav-links a:hover {
+  color: #E8EAED;
+  background: rgba(232, 234, 237, 0.08);
+}
+
+.dark .nav-links a.active {
+  color: #E8EAED;
+  background: rgba(232, 234, 237, 0.12);
+}
+
+.dark .nav-links a::after {
+  background: #E8EAED;
+}
+
+.dark .page-title {
+  color: #E8EAED;
+}
+
+.dark .page-subtitle {
+  color: #9CA3AF;
+}
+
+.dark .scroll-indicator {
+  color: #6B7280;
+}
+
+.dark .scroll-indicator:hover {
+  color: #E8EAED;
+}
+
+.dark .footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .footer-text {
+  color: #6B7280;
+}
+
+.dark .cta-button {
+  background: #E8EAED;
+  color: #0f1419;
+}
+
+/* 平滑过渡 */
+html,
+body,
+.nav,
+.nav-logo,
+.nav-logo-main,
+.nav-logo-sub,
+.nav-links a,
+.page-title,
+.page-subtitle,
+.scroll-indicator,
+.footer,
+.footer-text,
+.cta-button {
+  transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+

@@ -133,3 +133,22 @@
   }
 }
 
+/* Dark Mode */
+.dark .capability-scroll {
+  background: linear-gradient(to bottom, 
+    #0f1419 0%, 
+    #161b22 25%, 
+    #1a1f27 50%, 
+    #161b22 75%, 
+    #0f1419 100%
+  );
+}
+
+.dark .capability-title {
+  color: #E8EAED;
+}
+
+.dark .capability-body {
+  color: #9CA3AF;
+}
+
